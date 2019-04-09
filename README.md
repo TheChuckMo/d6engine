@@ -1,4 +1,4 @@
-# d6engine
+# D6 Engine
 
 -----
 
