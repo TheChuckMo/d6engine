@@ -1,0 +1,14 @@
+LICENSE-APACHE
+LICENSE-MIT
+MANIFEST.in
+README.md
+setup.py
+d6engine/__init__.py
+d6engine/__main__.py
+d6engine/cli.py
+d6engine.egg-info/PKG-INFO
+d6engine.egg-info/SOURCES.txt
+d6engine.egg-info/dependency_links.txt
+d6engine.egg-info/entry_points.txt
+d6engine.egg-info/top_level.txt
+tests/__init__.py
