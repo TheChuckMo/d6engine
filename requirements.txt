@@ -1,1 +1,4 @@
 -e .
+Click==7.0
+PyYAML==5.1
+tornado==6.0.2
