@@ -1,12 +1,52 @@
-from typing import NamedTuple, Tuple, AnyStr
+from typing import Dict, AnyStr, Any, List, Optional
+import yaml
+import os
 
 D6_ATTRIBUTE_MAX: int = 6
 D6_ATTRIBUTE_MIN: int = 1
 D6_ATTRIBUTE_DEFAULT: int = 3
 
 
+def load_attributes() -> List:
+    attr_file = os.path.join(os.path.dirname(__file__), 'data/attributes.yaml')
+    attr_data: List
+
+    with open(attr_file) as data:
+        attr_data = yaml.safe_load_all(data)
+
+    return attr_data
+
+
+class D6AttributeList(object):
+
+    def __init__(self, attributes: List):
+        for stat in attributes:
+            self.add_attribute(attribute=stat)
+
+    def add_attribute(self, attribute: Dict):
+        attr_name: str = attribute.get('name')
+        setattr(self, attr_name, D6Attribute(label=attribute.get('label', attr_name.capitalize()),
+                                             value=attribute.get('value', D6_ATTRIBUTE_DEFAULT),
+                                             max=attribute.get('max', D6_ATTRIBUTE_MAX),
+                                             min=attribute.get('min', D6_ATTRIBUTE_MIN),
+                                             description=attribute.get('description')))
+
+    def values(self):
+        return [getattr(x, 'value') for x in self.__dict__.values()]
+
+    def labels(self):
+        return [getattr(x, 'label') for x in self.__dict__.values()]
+
+    def keys(self):
+        return [x for x in self.__dict__.keys()]
+
+    def get(self, item: str):
+        return getattr(self, item, None)
+
+
 class D6Attribute(object):
     label: AnyStr
+    description: AnyStr
     _value: int
     min: int
     max: int
@@ -17,9 +57,12 @@ class D6Attribute(object):
                  value: int = D6_ATTRIBUTE_DEFAULT,
                  max: int = D6_ATTRIBUTE_MAX,
                  min: int = D6_ATTRIBUTE_MIN,
+                 description: AnyStr = None,
                  message: AnyStr = None):
         """D6 Attribute"""
         self.label = label
+        self.description = description
+
         self.max = max
         self.min = min
 
@@ -119,14 +162,5 @@ class D6Attribute(object):
             return self
         else:
             raise TypeError(self.message)
-
-
-class D6AttributeList(object):
-    _attribute_list: Tuple[AnyStr] = ('strength', 'dexterity', 'endurance', 'perception',
-                                      'intelligence', 'willpower', 'social', 'chance')
-
-    def __init__(self):
-        for stat in self._attribute_list:
-            setattr(self, stat, D6Attribute(label=stat.capitalize()))
 
 

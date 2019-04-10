@@ -1,0 +1,125 @@
+---
+character:
+  advancement:
+  - label: Advancement Points
+    name: adv_points
+    value: 22
+  - cost: 0
+    label: Attribute Points
+    name: atr_points
+    value: 0
+  - label: Skill Points
+    name: skl_points
+    value: 2
+  - label: Sub Skill Points
+    name: sub_points
+    value: 8
+  attributes:
+  - description: ''
+    label: ''
+    max: 0
+    min: 0
+    name: ''
+    value: 0
+  - description: Character Strength
+    label: Strength
+    max: 6
+    min: 1
+    name: strength
+    value: 3
+  - description: Character Dexterity
+    label: Dexterity
+    max: 6
+    min: 1
+    name: dexterity
+    value: 3
+  - description: Character Dexterity
+    label: Chance
+    max: 6
+    min: 1
+    name: chance
+    value: 3
+  equipped:
+  - action: ''
+    description: ''
+    label: ''
+    name: ''
+    target: []
+    type: ''
+    value: 0
+  - action: subtract
+    description: A shooter that shoots peas
+    label: Pea Shooter
+    name: pea_shooter
+    target:
+    - skills.small_weapon
+    value: 1
+  features:
+  - label: ''
+    metric: ''
+    name: ''
+    target: []
+    value: 0
+  - label: Height
+    metric: inches
+    name: height
+    value: 71
+  - label: Weight
+    metric: lbs
+    name: weight
+    value: 162
+  inventory:
+  - action: ''
+    description: ''
+    label: ''
+    name: ''
+    target: []
+    type: ''
+    value: 0
+  - action: add
+    description: A shooter that shoots potatos
+    label: Potato Shooter
+    name: potato_shooter
+    target:
+    - skills.small_weapon
+    value: 1
+  skills:
+  - action: ''
+    description: ''
+    label: ''
+    name: ''
+    target: []
+    value: 0
+  - action: add
+    description: Small weapon skill
+    label: Small Weapon
+    name: small_weapon
+    target:
+    - attributes.dexterity
+    value: 1
+  state:
+  - label: ''
+    name: ''
+    source: []
+  - label: Health
+    name: health
+    source:
+    - attributes.strength
+    - attributes.dexterity
+    - attributes.endurance
+  traits:
+  - label: ''
+    name: ''
+    value: ''
+  - label: Name
+    name: name
+    value: Character Name
+  - label: Description
+    name: description
+    value: Short character description
+control:
+  code: !!binary ""
+  home: ''
+  id: !!binary ""
+  owner: ''
+history: {}
