@@ -1,4 +1,4 @@
-# D6 Engine Attribute System
+# d6Engine Attribute System
 
 ### D6Attribute object
 

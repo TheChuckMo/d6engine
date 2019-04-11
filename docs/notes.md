@@ -3,4 +3,4 @@
 - Need a d6Egnine lexicon (dictionary)
 - enemy database?
   - created on fly by RM?
-  - Built like characters or seperate system?
+  - Built like characters or separate system?

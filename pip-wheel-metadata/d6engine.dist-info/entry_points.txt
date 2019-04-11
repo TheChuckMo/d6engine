@@ -1,3 +1,0 @@
-[console_scripts]
-d6engine = d6engine.cli:d6engine
-

@@ -4,9 +4,10 @@
 .coverage
 .idea/
 .vscode/
-realms.egg-info/
 build/
 dist/
 docs/build/
 venv/
 wheelhouse/
+d6engine.egg-info/
+pip-wheel-metadata/
