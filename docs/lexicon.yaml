@@ -1,0 +1,11 @@
+---
+# copy this entry to add new
+# additional fields can be added after definition in an entry
+- name: ''
+    note: ''
+    definition:
+# First entry, the name
+- name: d6Engine
+    note: First d lowercase, first e uppercase
+    definition: Name of core engine and module
+

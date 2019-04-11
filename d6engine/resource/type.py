@@ -1,3 +1,2 @@
-from typing import NewType, VarType, List, Mapping
-
+from typing import NewType, List, AnyStr, Any
 

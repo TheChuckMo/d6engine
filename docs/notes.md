@@ -1,6 +1,6 @@
-# Realms notes and thoughts
+# d6Engine notes and thoughts
 
-- Need a Realms lexicon (dictionary)
+- Need a d6Egnine lexicon (dictionary)
 - enemy database?
   - created on fly by RM?
   - Built like characters or seperate system?
