@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#/home/chuck/Projects/D6Engine/d6engine</OriginalElement>
+  <nodes>
+    <node x="0.0" y="955.0">d6engine.resource.base.D6CharacterComponent</node>
+    <node x="749.0" y="1382.0">d6engine.resource.attribute.D6CharacterAttributeComponent</node>
+    <node x="0.0" y="0.0">d6engine.resource.attribute.D6CharacterAttributeEntry</node>
+    <node x="371.0" y="1382.0">d6engine.resource.character.D6CharacterSheet</node>
+    <node x="1162.0" y="739.0">d6engine.resource.base.D6CharacterEntry</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="d6engine.resource.character.D6CharacterSheet" target="d6engine.resource.base.D6CharacterComponent">
+      <point x="0.0" y="0.0" />
+      <point x="540.0" y="1148.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="d6engine.resource.attribute.D6CharacterAttributeComponent" target="d6engine.resource.base.D6CharacterComponent">
+      <point x="0.0" y="0.0" />
+      <point x="963.5" y="1148.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="d6engine.resource.attribute.D6CharacterAttributeEntry" target="d6engine.resource.base.D6CharacterEntry">
+      <point x="0.0" y="0.0" />
+      <point x="1313.5" y="349.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6639566395663956" x="732.5" y="728.0000000000001" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+  </Categories>
+</Diagram>
+

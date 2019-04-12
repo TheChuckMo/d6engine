@@ -1,5 +1,6 @@
-from typing import AnyStr, NoReturn, Union, List
 from collections import deque
+from typing import AnyStr, NoReturn, Union
+
 from .base import D6CharacterEntry, D6CharacterComponent
 
 D6_CHARACTER_ATTRIBUTE_DEFAULT_DIE: int = 6
@@ -110,6 +111,3 @@ class D6CharacterAttributeEntry(D6CharacterEntry):
 class D6CharacterAttributeComponent(D6CharacterComponent):
     label: AnyStr = 'Attribute'
     description: AnyStr = 'D6Engine character attributes'
-
-
-

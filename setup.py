@@ -13,7 +13,7 @@ with open('d6engine/__init__.py', 'r') as f:
 with open('README.md', 'r', encoding='utf-8') as f:
     readme = f.read()
 
-REQUIRES = []
+REQUIRES = ['Click', 'PyYaml', 'slugify', 'tornado']
 
 setup(
     name='d6engine',
@@ -21,14 +21,14 @@ setup(
     description='',
     long_description=readme,
     author='Chuck Mo',
-    author_email='chuck@moosejudge.com',
+    author_email='chuck@d6engine.com',
     maintainer='Chuck Mo',
-    maintainer_email='chuck@moosejudge.com',
+    maintainer_email='chuck@d6engine.com',
     url='https://gitlab.com/thechuckmo/d6engine',
     license='MIT/Apache-2.0',
 
     keywords=[
-        '',
+        'dice', 'character', 'game', 'opend6',
     ],
 
     classifiers=[
@@ -47,6 +47,7 @@ setup(
     tests_require=['coverage', 'pytest'],
 
     packages=find_packages(),
+    package_data={'d6engine': ['data/*.yaml']},
     entry_points={
         'console_scripts': [
             'd6engine = d6engine.cli:d6engine',

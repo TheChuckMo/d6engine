@@ -1,8 +1,4 @@
-# d6Engine Attribute System
-
-### D6Attribute object
-
-```pythonstub
+# todo needs to be converted to actual pytest code.
 from d6engine.resource.attribute import D6CharacterAttributeEntry
 
 wisattr = D6CharacterAttributeEntry(label='Wisdom')
@@ -40,11 +36,8 @@ print(type(wisattr))
 health = wisattr + strattr + chnattr
 print(type(health))
 print(health)
-```
 
-### D6AttributeList object
 
-```pythonstub
 from d6engine.resource.attribute import D6CharacterAttributeComponent
 
 attr_component = D6CharacterAttributeComponent([wisattr, strattr, dexattr, chnattr])
@@ -55,4 +48,8 @@ from d6engine.resource.character import D6CharacterSheet
 d6_char = D6CharacterSheet([attr_component])
 
 d6_char.name
-```
+
+
+
+
+

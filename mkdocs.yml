@@ -1,0 +1,13 @@
+site_name: D6Engine Documentation
+site_author: Chuck Mo
+copyright: GPLv2
+repo_url: https://gitlab.com/thechuckmo/d6engine/
+edit_uri: blob/master/docs/
+
+#nav:
+#- Home: index.md
+#- ReadMe: ../README.md
+
+theme:
+  name: readthedocs
+

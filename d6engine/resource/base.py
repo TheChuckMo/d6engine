@@ -1,6 +1,7 @@
-from typing import AnyStr, List, Union, Optional, NoReturn
-from slugify import slugify
 from collections import deque
+from typing import AnyStr, List, NoReturn
+
+from slugify import slugify
 
 
 class D6CharacterEntry(object):
