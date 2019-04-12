@@ -1,0 +1,10 @@
+---
+default:
+  - { label: Strength, value: 3, die: 6 }
+  - { label: Dexterity, value: 3, die: 6 }
+  - { label: Endurance, value: 3, die: 6 }
+  - { label: Perception, value: 3, die: 6 }
+  - { label: Intelligence, value: 3, die: 6 }
+  - { label: Willpower, value: 3, die: 6 }
+  - { label: Social, value: 3, die: 6 }
+  - { label: Chance, value: 3, die: 6 }

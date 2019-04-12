@@ -1,4 +1,6 @@
 -e .
 Click==7.0
+mypy-extensions==0.4.1
 PyYAML==5.1
+slugify==0.0.1
 tornado==6.0.2

@@ -6,12 +6,12 @@ d6_character = {
         'code': bytes(),  # Character HASH for verification
     },
     'character': {
-        'traits': [  # Born that way - WILL NEVER IMPACT CHARACTER!
+        'trait': [  # Born that way - WILL NEVER IMPACT CHARACTER!
             {'name': str(), 'label': str(), 'value': str()},
             {'name': 'name', 'label': 'Name', 'value': 'Character Name'},
             {'name': 'description', 'label': 'Description', 'value': 'Short character description'},
         ],
-        'features': [  # Could change, could impact character one-day (target optional and IGNORED for now)
+        'feature': [  # Could change, could impact character one-day (target optional and IGNORED for now)
             {'name': str(), 'label': str(), 'value': int(), 'metric': str(), 'target': list()},
             {'name': 'height', 'label': 'Height', 'value': 71, 'metric': 'inches'},
             {'name': 'weight', 'label': 'Weight', 'value': 162, 'metric': 'lbs'}

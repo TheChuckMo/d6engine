@@ -1,0 +1,6 @@
+---
+default:
+  - { label: Advancement, points: 0, cost: 0 }
+  - { label: Attribute, points: 0, cost: 10 }
+  - { label: Skill, points: 0, cost: 10 }
+  - { label: Sub Skill, points: 0, cost: 10 }

@@ -3,39 +3,56 @@
 ### D6Attribute object
 
 ```pythonstub
-from d6engine.attribute import D6Attribute, D6AttributeList
-strength = D6Attribute(label='Strength')
-wisdom = D6Attribute(label='Wisdom', value=2)
-strength.label
-'Strength'
-strength.value
-3
-str(wisdom)
-'Wisdom'
-int(wisdom)
-2
-strength = strength + 1
-strength.value
-4
-wisdom += 2
-int(wisdom)
-4
+from d6engine.resource.attribute import D6CharacterAttributeEntry
+
+wisattr = D6CharacterAttributeEntry(label='Wisdom')
+strattr = D6CharacterAttributeEntry(label='Strength', value=4)
+dexattr = D6CharacterAttributeEntry(label='Dexterity', value=2)
+chnattr = D6CharacterAttributeEntry(label='Chance', value=4, die=6)
+
+# properties
+print(wisattr)
+print(int(wisattr))
+print(wisattr.name)
+print(wisattr.label)
+print(wisattr.die)
+print(wisattr.value)
+
+# change value
+print(wisattr.value)
+wisattr += 2
+print(wisattr.value)
+wisattr -= 4
+print(wisattr.value)
+wisattr.value = 5
+print(wisattr.value)
+wisattr.value = wisattr.value - 4
+print(wisattr.value)
+
+# .value + int will output an int
+print(type(wisattr))
+wisattr = wisattr.value + 4
+print(type(wisattr))
+wisattr = D6CharacterAttributeEntry(label='Wisdom')
+print(type(wisattr))
+
+# adding attributes will output an int
+health = wisattr + strattr + chnattr
+print(type(health))
+print(health)
 ```
 
 ### D6AttributeList object
 
 ```pythonstub
-from d6engine.attribute import D6Attribute, D6AttributeList
-attributes = D6AttributeList()
-attributes.strength.label
-'Strength'
-attributes.strength.value
-3
-str(attributes.willpower)
-'Willpower'
-int(attributes.willpower)
-3
-attributes.strength.value = 2
-attributes.strength.value
-2
+from d6engine.resource.attribute import D6CharacterAttributeComponent
+
+attr_component = D6CharacterAttributeComponent([wisattr, strattr, dexattr, chnattr])
+
+
+from d6engine.resource.character import D6CharacterSheet
+
+d6_char = D6CharacterSheet([attr_component])
+
+d6_char.name
 ```

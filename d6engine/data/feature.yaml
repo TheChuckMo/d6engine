@@ -1,0 +1,4 @@
+---
+default:
+  - { label: Height, value: 0, scale: 'inches' }
+  - { label: Weight, value: 0, scale: 'lbs' }

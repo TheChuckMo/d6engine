@@ -1,0 +1,4 @@
+---
+default:
+  - { label: Name, value: 'Character name' }
+  - { label: Description, value: 'Character description'}
