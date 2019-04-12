@@ -1,14 +1,14 @@
 [metadata]
 name = 'd6engine'
 version = '0.0.1'
-description = ''
+description = 'D6Engine'
 author = 'Chuck Mo'
 author_email = 'chuck@moosejudge.com'
-license = 'MIT/Apache-2.0'
+license = 'GPLv3'
 url = 'https://gitlab.com/thechuckmo/d6engine'
 
 [requires]
-python_version = ['3.6', 'pypy3']
+python_version = ['3.6', '3.7']
 
 [build-system]
 requires = ['setuptools', 'wheel']
