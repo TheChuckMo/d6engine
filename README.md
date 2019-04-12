@@ -11,7 +11,7 @@
 
 d6engine is distributed on [PyPI](https://pypi.org) as a universal
 wheel and is available on Linux/macOS and Windows and supports
-Python 3.6+ and PyPy.
+Python 3.6+ 
 
 ```bash
 $ pip install d6engine
@@ -21,7 +21,5 @@ $ pip install d6engine
 
 d6engine is distributed under the terms of both
 
-- [MIT License](https://choosealicense.com/licenses/mit)
-- [Apache License, Version 2.0](https://choosealicense.com/licenses/apache-2.0)
+- [GPLv3 License](https://opensource.org/licenses/GPL-3.0)
 
-at your option.
