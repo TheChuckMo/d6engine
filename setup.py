@@ -13,7 +13,9 @@ with open('d6engine/__init__.py', 'r') as f:
 with open('README.md', 'r', encoding='utf-8') as f:
     readme = f.read()
 
-REQUIRES = ['Click', 'PyYaml', 'slugify', 'tornado']
+REQUIRES = ['Click', 'PyYaml', 'slugify', 'tornado', 'dotenv', 'mkdocs']
+BUILD_REQUIRES = []
+TEST_REQUIRES = ['coverage', 'pytest']
 
 setup(
     name='d6engine',
@@ -27,9 +29,7 @@ setup(
     url='https://gitlab.com/thechuckmo/d6engine',
     license='GPLv3',
 
-    keywords=[
-        'dice', 'character', 'game', 'opend6',
-    ],
+    keywords=['dice', 'character', 'game', 'opend6'],
 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -52,7 +52,7 @@ setup(
     ],
 
     install_requires=REQUIRES,
-    tests_require=['coverage', 'pytest'],
+    tests_require=TEST_REQUIRES,
 
     packages=find_packages(),
     package_data={'d6engine': ['data/*.yaml']},

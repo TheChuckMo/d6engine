@@ -1,3 +1,4 @@
+"""D6Engine Character Attributes"""
 from collections import deque
 from typing import AnyStr, NoReturn, Union
 
@@ -8,6 +9,9 @@ D6_CHARACTER_ATTRIBUTE_DEFAULT_VALUE: int = 3
 
 
 class D6CharacterAttributeEntry(D6CharacterEntry):
+    """
+
+    """
     die: int
     _value: int
     _message: deque
@@ -16,7 +20,14 @@ class D6CharacterAttributeEntry(D6CharacterEntry):
                  label: AnyStr,
                  value: int = D6_CHARACTER_ATTRIBUTE_DEFAULT_VALUE,
                  die: int = D6_CHARACTER_ATTRIBUTE_DEFAULT_DIE):
-        """Field"""
+        """Field
+
+        Parameters
+        ----------
+        label :
+        value :
+        die :
+        """
         self._message = deque('', 5)
 
         self.label = label

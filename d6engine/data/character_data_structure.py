@@ -51,7 +51,7 @@ d6_character = {
             {'name': str(), 'label': str(), 'type': str(), 'value': int(), 'description': str(), 'target': list(),
              'action': str()},
             {'name': 'potato_shooter', 'label': 'Potato Shooter', 'value': 1,
-             'description': 'A shooter that shoots potatos',
+             'description': 'A shooter that shoots potato',
              'target': ['skills.small_weapon'], 'action': 'add'},
         ],
     },

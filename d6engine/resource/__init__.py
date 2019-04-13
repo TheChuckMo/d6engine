@@ -1,0 +1,1 @@
+"""D6Engine resources"""

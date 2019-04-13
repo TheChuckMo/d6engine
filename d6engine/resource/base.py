@@ -1,3 +1,4 @@
+
 from collections import deque
 from typing import AnyStr, List, NoReturn
 
@@ -14,19 +15,34 @@ class D6CharacterEntry(object):
         return self._message[-1]
 
     @message.setter
-    def message(self, msg) -> NoReturn:
+    def message(self, msg):
         self._message.append(msg)
 
     @property
     def messages(self):
+        """
+
+        Returns
+        -------
+
+        """
         return '::'.join(self._message)
 
     @property
     def name(self):
+        """
+
+        Returns
+        -------
+
+        """
         return slugify(self.label)
 
 
 class D6CharacterComponent(object):
+    """
+
+    """
     label: AnyStr
     description: AnyStr
 
@@ -39,22 +55,58 @@ class D6CharacterComponent(object):
             self.add_item(item)
 
     def add_item(self, item: D6CharacterEntry):
+        """
+
+        Parameters
+        ----------
+        item
+        """
         setattr(self, item.name, item)
 
     def del_item(self, item: D6CharacterEntry):
+        """
+
+        Parameters
+        ----------
+        item
+        """
         delattr(self, item.name)
 
     @property
     def name(self):
+        """
+
+        Returns
+        -------
+
+        """
         return slugify(self.label)
 
     def values(self):
+        """
+
+        Returns
+        -------
+
+        """
         return [getattr(x, 'value') for x in self.__dict__.values()]
 
     def labels(self):
+        """
+
+        Returns
+        -------
+
+        """
         return [getattr(x, 'label') for x in self.__dict__.values()]
 
     def names(self):
+        """
+
+        Returns
+        -------
+
+        """
         return [x for x in self.__dict__.keys()]
 
     def __str__(self):
