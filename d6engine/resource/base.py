@@ -1,16 +1,16 @@
 
 from collections import deque
-from typing import AnyStr, List, NoReturn
+from typing import List, NoReturn
 
 from slugify import slugify
 
 
 class D6CharacterEntry(object):
-    label: AnyStr = 'START'
+    label: str = 'START'
     _message: deque = deque(label, 5)
 
     @property
-    def message(self) -> AnyStr:
+    def message(self) -> str:
         """Internal messages"""
         return self._message[-1]
 
@@ -43,8 +43,8 @@ class D6CharacterComponent(object):
     """
 
     """
-    label: AnyStr
-    description: AnyStr
+    label: str
+    description: str 
 
     def __init__(self, items: List = None):
         """D6 Character Component"""
@@ -73,7 +73,7 @@ class D6CharacterComponent(object):
         delattr(self, item.name)
 
     @property
-    def name(self):
+    def name(self) -> str:
         """
 
         Returns
@@ -82,7 +82,7 @@ class D6CharacterComponent(object):
         """
         return slugify(self.label)
 
-    def values(self):
+    def values(self) -> list:
         """
 
         Returns
@@ -91,7 +91,7 @@ class D6CharacterComponent(object):
         """
         return [getattr(x, 'value') for x in self.__dict__.values()]
 
-    def labels(self):
+    def labels(self) -> list:
         """
 
         Returns
@@ -100,7 +100,7 @@ class D6CharacterComponent(object):
         """
         return [getattr(x, 'label') for x in self.__dict__.values()]
 
-    def names(self):
+    def names(self) -> list:
         """
 
         Returns

@@ -13,7 +13,7 @@ with open('d6engine/__init__.py', 'r') as f:
 with open('README.md', 'r', encoding='utf-8') as f:
     readme = f.read()
 
-REQUIRES = ['Click', 'PyYaml', 'slugify', 'tornado', 'dotenv', 'mkdocs']
+REQUIRES = ['Click', 'PyYaml', 'slugify', 'tornado', 'pydotenv', 'mkdocs']
 BUILD_REQUIRES = []
 TEST_REQUIRES = ['coverage', 'pytest']
 
