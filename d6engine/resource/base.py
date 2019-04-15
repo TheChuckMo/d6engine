@@ -1,12 +1,50 @@
 
 from collections import deque
-from typing import List, NoReturn
+
 from slugify import slugify
 
 
+def default_verifier(value: [int, str], data: dict) -> bool:
+    return True
+
+
 class D6CharacterEntry(object):
-    label: str = 'START'
-    _message: deque = deque(label, 5)
+    verifiers: list = [default_verifier]
+    _data_list_ = ['label', 'value']
+
+    def __init__(self, label: str, value: [int, str]):
+        # initialize queue and value storage
+        self._message = deque('C', 5)
+        self._value: str
+
+        # set label and value 
+        self.label = label
+        self.value = value
+
+    def __repr__(self):
+        return f'D6CharacterEntry(label={self.label}, value={self.value})'
+
+    @property
+    def data(self) -> dict:
+        _data: dict = {}
+        for item in self._data_list_:
+            _data[item] = getattr(self, item)
+        return _data 
+
+    @property
+    def value(self) -> [int, str]:
+        return self._value
+
+    @value.setter
+    def value(self, value: [int, str]):
+        for verifier in self.verifiers:
+            if verifier(value, {'name', self.name}):
+                self.message = f'{verifier.__name__} passed'
+            else:
+                self.message = f'{verifier.__name__} failed'
+                raise ValueError(f'{self.message}')
+        
+        self._value = value
 
     @property
     def message(self) -> str:
@@ -14,7 +52,7 @@ class D6CharacterEntry(object):
         return self._message[-1]
 
     @message.setter
-    def message(self, msg):
+    def message(self, msg: str):
         self._message.append(msg)
 
     @property
@@ -37,6 +75,12 @@ class D6CharacterEntry(object):
         """
         return slugify(self.label)
 
+    def __str__(self) -> str:
+        return str(self.value)
+
+    def __int__(self) -> int:
+        return int(self.value)
+
 
 class D6CharacterComponent(object):
     """
@@ -45,7 +89,7 @@ class D6CharacterComponent(object):
     label: str
     description: str 
 
-    def __init__(self, items: List = None):
+    def __init__(self, items: list = []):
         """D6 Character Component"""
         if items is None:
             return

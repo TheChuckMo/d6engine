@@ -4,69 +4,32 @@ from typing import AnyStr, NoReturn, Union
 
 from .base import D6CharacterEntry, D6CharacterComponent
 
-D6_CHARACTER_ATTRIBUTE_DEFAULT_DIE: int = 6
-D6_CHARACTER_ATTRIBUTE_DEFAULT_VALUE: int = 3
+D6_DEFAULT_DIE: int = 6
+
+
+def below_one(value: [int], data: dict) -> bool:
+    if value > 1:
+        return True
+    return False
+
+
+def above_die(value: [int], data: dict) -> bool:
+    if value <= data.data('die', 0):
+        return True
+    return False
 
 
 class D6CharacterAttributeEntry(D6CharacterEntry):
-    """
+    verifiers: list = [below_one, above_die]
 
-    """
-    die: int
-    _value: int
-    _message: deque
-
-    def __init__(self,
-                 label: AnyStr,
-                 value: int = D6_CHARACTER_ATTRIBUTE_DEFAULT_VALUE,
-                 die: int = D6_CHARACTER_ATTRIBUTE_DEFAULT_DIE):
-        """Field
-
-        Parameters
-        ----------
-        label :
-        value :
-        die :
-        """
-        self._message = deque('', 5)
-
-        self.label = label
+    def __init__(self, label: str, value: int, die: int = D6_DEFAULT_DIE):
         self.die = die
-        self.value = value
+        self._data_list_.append('die')
 
-    def check(self, item: int) -> bool:
-        """Run value check"""
-        if item != 0 and item <= self.die:
-            return True
+        super().__init__(label, value)
 
-        return False
-
-    @property
-    def value(self) -> int:
-        """Field Value"""
-        return self._value
-
-    @value.setter
-    def value(self, num: int) -> NoReturn:
-        """Set Field Value"""
-        if self.check(num):
-            self._value = num
-            self.message = 'set to {}'.format(num)
-        else:
-            self.message = 'failed to set {}'.format(num)
-            raise ValueError(self.message)
-
-    def __repr__(self) -> AnyStr:
-        return '{}(label=\'{}\', value={}, die={})'.format(self.__class__.__name__,
-                                                           self.label,
-                                                           self.value,
-                                                           self.die)
-
-    def __str__(self) -> str:
-        return self.label
-
-    def __int__(self):
-        return self.value
+    def __repr__(self):
+        return f'D6CharacterAttributeEntry({self.label}, {self.value}, {self.die})'
 
     def __add__(self, other: Union[object, int]) -> int:
         if type(other) is int:
