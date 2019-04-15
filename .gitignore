@@ -8,6 +8,7 @@ build/
 dist/
 docs/build/
 venv/
+.venv/
 wheelhouse/
 d6engine.egg-info/
 pip-wheel-metadata/

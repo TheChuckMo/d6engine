@@ -1,17 +1,25 @@
-[metadata]
-name = 'd6engine'
-version = '0.0.1'
-description = 'D6Engine'
-author = 'Chuck Mo'
-author_email = 'chuck@moosejudge.com'
-license = 'GPLv3'
-url = 'https://gitlab.com/thechuckmo/d6engine'
+[tool.poetry]
+name = "d6engine"
+version = "0.1.2"
+description = "OpenD6 character engine"
+authors = ["Chuck Moreland <chuck@d6engine.com>"]
+license = "GPL-3.0+"
 
-[requires]
-python_version = ['3.6', '3.7']
+[tool.poetry.dependencies]
+python = "^3.6"
+tornado = "^6.0"
+pyyaml = "^5.1"
+click = "^7.0"
+python-slugify = "^3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.4"
+
+[tool.poetry.scripts]
+d6server = 'd6engine.server.main:cli'
+d6client = 'd6engine.client.main:cli'
 
 [build-system]
-requires = ['setuptools', 'wheel']
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
 
-[tool.hatch.commands]
-prerelease = 'hatch build'
