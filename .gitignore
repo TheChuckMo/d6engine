@@ -2,7 +2,6 @@
 *.pyc
 .cache/
 .coverage
-.idea/
 .vscode/
 build/
 dist/

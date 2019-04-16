@@ -1,12 +1,12 @@
+
 from collections import deque
-from dataclasses import dataclass, field, InitVar
-from collections.abc import Mapping
-from typing import Any
+from dataclasses import dataclass, InitVar, field
+from datetime import datetime
 
 from slugify import slugify
 
 
-def default_verifier(value: [int, str], data: dict) -> bool:
+def default_verifier(value: [int, str], entry: object) -> bool:
     """ default verifier for character attributes
 
     Parameters
@@ -22,19 +22,22 @@ def default_verifier(value: [int, str], data: dict) -> bool:
     return True
 
 
-@dataclass(order=True, repr=False)
+@dataclass(repr=False)
 class CharacterEntry:
-    label: str = field()
-    entry: InitVar[int, str]
-    _value: [int, str] = field(init=False, repr=False, compare=False)
+    __slots__ = ['checks', '_message', '_label', '_value']
+    entry_label: InitVar[str]
+    entry_value: InitVar[int, str]
 
-    def __post_init__(self, entry: [int, str]):
-        self.checks = [default_verifier]
+    def __post_init__(self, entry_label: str, entry_value: [int, str]):
+        self._label = entry_label
+        self._value = 0
         self._message = deque([], 10)
-        self.value = entry
+
+        self.checks = [default_verifier]
+        self.value = entry_value
 
     def __repr__(self):
-        return f'{self.__class__.__name__}(entry={self.value}, label={self.label})'
+        return f'{self.__class__.__name__}(entry_label={self.label}, entry_value={self.value})'
 
     def __str__(self):
         return f'{self.value}'
@@ -44,6 +47,9 @@ class CharacterEntry:
 
     def __bytes__(self):
         return str(self.value).encode('utf-8')
+
+    def __eq__(self, other):
+        return self.value == other.value
 
     @property
     def value(self) -> [int, str]:
@@ -55,20 +61,23 @@ class CharacterEntry:
         """
         return self._value
 
+    @property
+    def label(self) -> str:
+        return self._label
+
     @value.setter
     def value(self, value: [int, str]):
         for check in self.checks:
-            if check(value, {'name', self.name}):
+            if check(value, self):
                 self.message = f'{check.__name__} passed'
             else:
                 self.message = f'{check.__name__} failed'
                 raise ValueError(f'{self.message}')
-
         self._value = value
 
     @property
-    def name(self):
-        return slugify(self.label)
+    def name(self) -> str:
+        return slugify(self._label)
 
     @property
     def message(self) -> str:
@@ -77,23 +86,17 @@ class CharacterEntry:
 
     @message.setter
     def message(self, msg: str):
-        self._message.append(msg)
+        _stamp = datetime.timestamp(datetime.utcnow())
+        _source = self.name
+        self._message.append(f'{_source}::{_stamp}::{msg}')
 
     @property
-    def messages(self):
+    def messages(self) -> list:
         """
 
         Returns
         -------
 
         """
-        return '::'.join(self._message)
-
-
-class CharacterComponent(Mapping):
-    pass
-
-# @dataclass(order=True)
-# class CharacterComponent:
-#     items: list
+        return [x for x in self._message]
 
