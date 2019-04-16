@@ -1,5 +1,6 @@
 from collections import deque
-from dataclasses import dataclass, field, InitVar, MISSING
+from dataclasses import dataclass, field, InitVar
+from typing import Any
 
 from slugify import slugify
 
@@ -19,24 +20,35 @@ def default_verifier(value: [int, str], data: dict) -> bool:
     """
     return True
 
-def def_factory():
-    return [default_verifier]
 
-
-@dataclass(order=True)
+@dataclass(order=True, repr=False)
 class CharacterEntry:
     entry: InitVar[int, str]
-    label: str
-    checks: InitVar[list] = field(default=list([default_verifier]), init=True, repr=False, compare=False)
-    _message: deque = field(default=deque('X', 5), init=False, repr=False, compare=False)
-    _value: [int, str] = field(default=0, init=False, repr=False, compare=False)
+    label: str = field()
+    _value: [int, str] = field(init=False, repr=False, compare=False)
 
-    def __post_init__(self, entry: [int, str], checks: list):
-        self.checks = checks
+    def __post_init__(self, entry: [int, str]):
+        self.checks = [default_verifier]
+        self._message = deque([], 10)
         self.value = entry
+
+    def __repr__(self):
+        return f'{self.__class__.__name__}(entry={self.value}, label={self.label})'
+
+    def __str__(self):
+        return f'{self.value}'
+
+    def __int__(self):
+        return int(self.value)
 
     @property
     def value(self) -> [int, str]:
+        """
+
+        Returns
+        -------
+
+        """
         return self._value
 
     @value.setter
@@ -74,175 +86,95 @@ class CharacterEntry:
         return '::'.join(self._message)
 
 
-class D6CharacterEntry(object):
-    verifiers: list = [default_verifier]
-    _data_list_ = ['name', 'label', 'value']
-
-    def __init__(self, label: str, value: [int, str]):
-        """
-
-        :param label:
-        :type label:
-        :param value:
-        :type value:
-        """
-        # initialize queue and value storage
-        self._message = deque('C', 5)
-        self._value: str
-
-        # set label and value 
-        self.label = label
-        self.value = value
-
-    def __repr__(self):
-        return f'D6CharacterEntry(label={self.label}, value={self.value})'
-
-    @property
-    def data(self) -> dict:
-        _data: dict = {}
-        for item in self._data_list_:
-            _data[item] = getattr(self, item)
-        return _data
-
-    @property
-    def value(self) -> [int, str]:
-        return self._value
-
-    @value.setter
-    def value(self, value: [int, str]):
-        for verifier in self.verifiers:
-            if verifier(value, {'name', self.name}):
-                self.message = f'{verifier.__name__} passed'
-            else:
-                self.message = f'{verifier.__name__} failed'
-                raise ValueError(f'{self.message}')
-
-        self._value = value
-
-    @property
-    def message(self) -> str:
-        """Internal messages"""
-        return self._message[-1]
-
-    @message.setter
-    def message(self, msg: str):
-        self._message.append(msg)
-
-    @property
-    def messages(self):
-        """
-
-        Returns
-        -------
-
-        """
-        return '::'.join(self._message)
-
-    @property
-    def name(self):
-        """
-
-        Returns
-        -------
-
-        """
-        return slugify(self.label)
-
-    def __str__(self) -> str:
-        return str(self.value)
-
-    def __int__(self) -> int:
-        return int(self.value)
-
-    def __getitem__(self, item):
-        return getattr(self, item, None)
-
-
-class D6CharacterComponent(object):
-    """
-
-    """
-    label: str
-    description: str
-
-    def __init__(self, items: list = []):
-        """D6 Character Component"""
-        if items is None:
-            return
-
-        for item in items:
-            self.add_item(item)
-
-    def add_item(self, item: D6CharacterEntry):
-        """
-
-        Parameters
-        ----------
-        item
-        """
-        setattr(self, item.name, item)
-
-    def del_item(self, item: D6CharacterEntry):
-        """
-
-        Parameters
-        ----------
-        item
-        """
-        delattr(self, item.name)
-
-    @property
-    def name(self) -> str:
-        """
-
-        Returns
-        -------
-
-        """
-        return slugify(self.label)
-
-    def values(self) -> list:
-        """
-
-        Returns
-        -------
-
-        """
-        return [getattr(x, 'value') for x in self.__dict__.values()]
-
-    def labels(self) -> list:
-        """
-
-        Returns
-        -------
-
-        """
-        return [getattr(x, 'label') for x in self.__dict__.values()]
-
-    def names(self) -> list:
-        """
-
-        Returns
-        -------
-
-        """
-        return [x for x in self.__dict__.keys()]
-
-    def __str__(self):
-        return '{}'.format(','.join(self.names()))
-
-    def __int__(self):
-        return len(self)
-
-    def __repr__(self):
-        items_repr: list = [repr(x) for x in self.__dict__.values()]
-        return '{}(items=[{}])'.format(self.__class__.__name__, ','.join(items_repr))
-
-    def __getitem__(self, key: str):
-        return self.__dict__.get(key, None)
-
-    def __getattr__(self, key: str):
-        return self.__dict__.get(key, None)
-
-    def __len__(self):
-        return len(self.__dict__)
+@dataclass(order=True)
+class CharacterComponent:
+    items: list
+#
+# class D6CharacterComponent(object):
+#     """
+#
+#     """
+#     label: str
+#     description: str
+#
+#     def __init__(self, items: list = []):
+#         """D6 Character Component"""
+#         if items is None:
+#             return
+#
+#         for item in items:
+#             self.add_item(item)
+#
+#     def add_item(self, item: D6CharacterEntry):
+#         """
+#
+#         Parameters
+#         ----------
+#         item
+#         """
+#         setattr(self, item.name, item)
+#
+#     def del_item(self, item: D6CharacterEntry):
+#         """
+#
+#         Parameters
+#         ----------
+#         item
+#         """
+#         delattr(self, item.name)
+#
+#     @property
+#     def name(self) -> str:
+#         """
+#
+#         Returns
+#         -------
+#
+#         """
+#         return slugify(self.label)
+#
+#     def values(self) -> list:
+#         """
+#
+#         Returns
+#         -------
+#
+#         """
+#         return [getattr(x, 'value') for x in self.__dict__.values()]
+#
+#     def labels(self) -> list:
+#         """
+#
+#         Returns
+#         -------
+#
+#         """
+#         return [getattr(x, 'label') for x in self.__dict__.values()]
+#
+#     def names(self) -> list:
+#         """
+#
+#         Returns
+#         -------
+#
+#         """
+#         return [x for x in self.__dict__.keys()]
+#
+#     def __str__(self):
+#         return '{}'.format(','.join(self.names()))
+#
+#     def __int__(self):
+#         return len(self)
+#
+#     def __repr__(self):
+#         items_repr: list = [repr(x) for x in self.__dict__.values()]
+#         return '{}(items=[{}])'.format(self.__class__.__name__, ','.join(items_repr))
+#
+#     def __getitem__(self, key: str):
+#         return self.__dict__.get(key, None)
+#
+#     def __getattr__(self, key: str):
+#         return self.__dict__.get(key, None)
+#
+#     def __len__(self):
+#         return len(self.__dict__)

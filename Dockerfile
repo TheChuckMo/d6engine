@@ -15,8 +15,11 @@ WORKDIR /app
 ADD . /app
 
 # Using pip:
-RUN python3 -m pip install -r requirements.txt
-CMD ["python3", "-m", "d6engine"]
+RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+# RUN python3 -m pip install -r requirements.txt
+#CMD ["python3", "-m", "d6engine"]
+CMD ["bash"]
+
 
 # Using pipenv:
 #RUN python3 -m pip install pipenv
