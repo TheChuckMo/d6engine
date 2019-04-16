@@ -1,18 +1,91 @@
-
 from collections import deque
+from dataclasses import dataclass, field, InitVar, MISSING
 
 from slugify import slugify
 
 
 def default_verifier(value: [int, str], data: dict) -> bool:
+    """ default verifier for character attributes
+
+    Parameters
+    ----------
+    value :
+    data :
+
+    Returns
+    -------
+    : bool
+
+    """
     return True
+
+def def_factory():
+    return [default_verifier]
+
+
+@dataclass(order=True)
+class CharacterEntry:
+    entry: InitVar[int, str]
+    label: str
+    checks: InitVar[list] = field(default=list([default_verifier]), init=True, repr=False, compare=False)
+    _message: deque = field(default=deque('X', 5), init=False, repr=False, compare=False)
+    _value: [int, str] = field(default=0, init=False, repr=False, compare=False)
+
+    def __post_init__(self, entry: [int, str], checks: list):
+        self.checks = checks
+        self.value = entry
+
+    @property
+    def value(self) -> [int, str]:
+        return self._value
+
+    @value.setter
+    def value(self, value: [int, str]):
+        for check in self.checks:
+            if check(value, {'name', self.name}):
+                self.message = f'{check.__name__} passed'
+            else:
+                self.message = f'{check.__name__} failed'
+                raise ValueError(f'{self.message}')
+
+        self._value = value
+
+    @property
+    def name(self):
+        return slugify(self.label)
+
+    @property
+    def message(self) -> str:
+        """Internal messages"""
+        return self._message[-1]
+
+    @message.setter
+    def message(self, msg: str):
+        self._message.append(msg)
+
+    @property
+    def messages(self):
+        """
+
+        Returns
+        -------
+
+        """
+        return '::'.join(self._message)
 
 
 class D6CharacterEntry(object):
     verifiers: list = [default_verifier]
-    _data_list_ = ['label', 'value']
+    _data_list_ = ['name', 'label', 'value']
 
     def __init__(self, label: str, value: [int, str]):
+        """
+
+        :param label:
+        :type label:
+        :param value:
+        :type value:
+        """
         # initialize queue and value storage
         self._message = deque('C', 5)
         self._value: str
@@ -29,7 +102,7 @@ class D6CharacterEntry(object):
         _data: dict = {}
         for item in self._data_list_:
             _data[item] = getattr(self, item)
-        return _data 
+        return _data
 
     @property
     def value(self) -> [int, str]:
@@ -43,7 +116,7 @@ class D6CharacterEntry(object):
             else:
                 self.message = f'{verifier.__name__} failed'
                 raise ValueError(f'{self.message}')
-        
+
         self._value = value
 
     @property
@@ -81,13 +154,16 @@ class D6CharacterEntry(object):
     def __int__(self) -> int:
         return int(self.value)
 
+    def __getitem__(self, item):
+        return getattr(self, item, None)
+
 
 class D6CharacterComponent(object):
     """
 
     """
     label: str
-    description: str 
+    description: str
 
     def __init__(self, items: list = []):
         """D6 Character Component"""
