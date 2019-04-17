@@ -1,4 +1,5 @@
 from d6engine.resource.base import CharacterEntry
+from slugify import slugify
 import pytest
 import random
 
@@ -22,13 +23,22 @@ class TestCharacterEntry:
 
     def test_string_entry(self, character_entry_strings):
         entry = CharacterEntry(**character_entry_strings)
-        assert entry.label is character_entry_strings.get('entry_label')
-        assert entry.value is character_entry_strings.get('entry_value')
+
+        assert entry.label == character_entry_strings.get('entry_label')
+        assert entry.name == slugify(entry._label)
+        assert entry.value == character_entry_strings.get('entry_value')
+
+        entry.value = 'new'
+        assert entry.value is 'new'
 
     def test_number_entry(self, character_entry_numbers):
         entry = CharacterEntry(**character_entry_numbers)
-        assert entry.label is character_entry_numbers.get('entry_label')
+        assert entry.label == character_entry_numbers.get('entry_label')
+        assert entry.name == slugify(entry._label)
         assert entry.value == character_entry_numbers.get('entry_value')
+
+        entry.value = 5
+        assert entry.value == 5
 
     # todo add test to verify message format and system (api not consistent yet)
     # def test_message(self, data):

@@ -27,13 +27,14 @@ class CharacterEntry:
     __slots__ = ['checks', '_message', '_label', '_value']
     entry_label: InitVar[str]
     entry_value: InitVar[int, str]
+    entry_checks: InitVar = field(default=[default_verifier])
 
-    def __post_init__(self, entry_label: str, entry_value: [int, str]):
+    def __post_init__(self, entry_label: str, entry_value: [int, str], entry_checks: list):
         self._label = entry_label
         self._value = 0
         self._message = deque([], 10)
 
-        self.checks = [default_verifier]
+        self.checks = entry_checks
         self.value = entry_value
 
     def __repr__(self):
