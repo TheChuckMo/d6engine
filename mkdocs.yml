@@ -1,8 +1,9 @@
 site_name: D6Engine Documentation
 site_author: Chuck Mo
-copyright: GPLv2
+copyright: GPLv3
 repo_url: https://gitlab.com/thechuckmo/d6engine/
 edit_uri: blob/master/docs/
+google_analytics: [UA-138667896-1]
 
 #nav:
 #- Home: index.md
