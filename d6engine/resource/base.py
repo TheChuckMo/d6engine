@@ -1,9 +1,8 @@
-
 from collections import deque
 from collections.abc import Iterable, Collection
 from dataclasses import dataclass, InitVar, field
 from datetime import datetime
-from typing import Iterator
+from typing import List
 
 from slugify import slugify
 
@@ -25,15 +24,15 @@ class CharacterComponent(Collection):
 
 
 # def __init__(self, items: list) -> None:
-    #     self._mapping: list = items
+#     self._mapping: list = items
 
 # def __getitem__(self, item):
-    #     getattr(self, item, None)
-    #
-    # def __iter__(self):
-    #
+#     getattr(self, item, None)
+#
+# def __iter__(self):
+#
 
-def default_verifier(value: [int, str], entry: object) -> bool:
+def default_check(value: [int, str], entry: object) -> bool:
     """ default verifier for character attributes
 
     Parameters
@@ -49,23 +48,25 @@ def default_verifier(value: [int, str], entry: object) -> bool:
     return True
 
 
-@dataclass(repr=False)
 class CharacterEntry:
-    __slots__ = ['checks', '_message', '_label', '_value']
-    entry_label: InitVar[str]
-    entry_value: InitVar[int, str]
-    entry_checks: InitVar = field(default=[default_verifier])
+    """Character Entry base
 
-    def __post_init__(self, entry_label: str, entry_value: [int, str], entry_checks: list):
-        self._label = entry_label
-        self._value = 0
-        self._message = deque([], 10)
+    """
+    __slots__ = ['_message', '_label', '_value']
+    checks: List = [default_check]
 
-        self.checks = entry_checks
-        self.value = entry_value
+    def __init__(self, label: str, value: [int, str], checks: list = None):
+        self._value: [int, str]
+        self._label = label
+        self._message = deque([], 50)
+
+        if type(checks) is list:
+            self.checks.extend(checks)
+
+        self.value = value
 
     def __repr__(self):
-        return f'{self.__class__.__name__}(entry_label={self.label}, entry_value={self.value})'
+        return f'{self.__class__.__name__}(label={self.label}, value={self.value})'
 
     def __str__(self):
         return f'{self.value}'
@@ -89,19 +90,20 @@ class CharacterEntry:
         """
         return self._value
 
-    @property
-    def label(self) -> str:
-        return self._label
-
     @value.setter
     def value(self, value: [int, str]):
         for check in self.checks:
             if check(value, self):
-                self.message = f'{check.__name__} passed'
+                self.message = f'{check.__name__} passed for {value}'
             else:
-                self.message = f'{check.__name__} failed'
+                self.message = f'{check.__name__} failed for {value}'
                 raise ValueError(f'{self.message}')
         self._value = value
+        self.message = f'{self.name} set to {self.value}'
+
+    @property
+    def label(self) -> str:
+        return self._label
 
     @property
     def name(self) -> str:
