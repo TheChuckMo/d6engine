@@ -1,8 +1,6 @@
 from collections import deque
-from collections.abc import Iterable, Collection
-from dataclasses import dataclass, InitVar, field
+from collections.abc import Collection
 from datetime import datetime
-from typing import List
 
 from slugify import slugify
 
@@ -53,7 +51,7 @@ class CharacterEntry:
 
     """
     __slots__ = ['_message', '_label', '_value']
-    checks: List = [default_check]
+    checks = [default_check]
 
     def __init__(self, label: str, value: [int, str], checks: list = None):
         self._value: [int, str]

@@ -1,0 +1,5 @@
+Click==7.0
+python-slugify==3.0.2
+PyYAML==5.1
+text-unidecode==1.2
+tornado==6.0.2

@@ -3,9 +3,9 @@ site_author: Chuck Mo
 copyright: GPLv3
 repo_url: https://gitlab.com/thechuckmo/d6engine/
 edit_uri: blob/master/docs/
-google_analytics: [UA-138667896-1]
+google_analytics: [UA-138667896-1, d6engine.org]
 
-#nav:
+nav:
 #- Home: index.md
 #- ReadMe: ../README.md
 
