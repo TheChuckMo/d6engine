@@ -1,10 +1,37 @@
 
 from collections import deque
+from collections.abc import Iterable, Collection
 from dataclasses import dataclass, InitVar, field
 from datetime import datetime
+from typing import Iterator
 
 from slugify import slugify
 
+
+class CharacterComponent(Collection):
+    pass
+
+    def __len__(self):
+        pass
+
+    def __contains__(self, item):
+        pass
+
+    def __iter__(self):
+        pass
+
+    # def __iter__(self) -> Iterator:
+    #     pass
+
+
+# def __init__(self, items: list) -> None:
+    #     self._mapping: list = items
+
+# def __getitem__(self, item):
+    #     getattr(self, item, None)
+    #
+    # def __iter__(self):
+    #
 
 def default_verifier(value: [int, str], entry: object) -> bool:
     """ default verifier for character attributes
