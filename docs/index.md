@@ -1,3 +1,3 @@
-# D6Engine Documentation
+# Home
 
 

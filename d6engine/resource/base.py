@@ -1,21 +1,34 @@
-from collections import deque
+# coding=utf-8
+"""base class CharacterEntry CharacterComponent
+
+d6Engine base classes used for resources
+
+"""
+from collections import deque, namedtuple
 from collections.abc import Collection
 from datetime import datetime
+from typing import List
 
 from slugify import slugify
 
 
 class CharacterComponent(Collection):
-    pass
+    _items: namedtuple
+
+    def __init__(self, items: List):
+        for item in items:
+            self._items.append(item.name, item)
+
+        self._items = items
 
     def __len__(self):
-        pass
+        len(self._items)
 
     def __contains__(self, item):
-        pass
+        return item in self._items
 
     def __iter__(self):
-        pass
+        return self._items
 
     # def __iter__(self) -> Iterator:
     #     pass
@@ -47,13 +60,58 @@ def default_check(value: [int, str], entry: object) -> bool:
 
 
 class CharacterEntry:
-    """Character Entry base
+    """
+    base class character entry
+
+
+    ...
+
+    Attributes
+    ----------
+    label: str
+        string identifying the entry
+    value: int, str
+        data held in the entry
+    checks: list of func = default_check(value: [int, str], data: dict) -> bool
+        list of functions used to verify value before setting
+    message: str
+        last internal object message
+
+    Methods
+    -------
+    name: str
+        (read-only) auto generated with slugify(label)
+    messages: list of str
+        list of all internal object messages
+
+    Notes
+    -----
+    Check functions must take the new value and the entry object as parameters and only return a bool. The checks
+    will be run in serial based on the order given until all succeeded or a check fails by returning a False. If
+    a test fails an exception will be raised, if all pass the new value will be set. Each check and the final status
+    is stored as a message on the object.
+
+    .. def name(value: [int, str], entry: object) -> bool
+    ..    if entry.name != 'something':
+    ..        return False
+    ..    else:
+    ..        return True
+
 
     """
     __slots__ = ['_message', '_label', '_value']
     checks = [default_check]
 
     def __init__(self, label: str, value: [int, str], checks: list = None):
+        """
+        Initiate character entry object
+
+        Parameters
+        ----------
+        label : str
+        value : [int, str]
+        checks : list(func) optional
+        """
         self._value: [int, str]
         self._label = label
         self._message = deque([], 50)
@@ -81,10 +139,11 @@ class CharacterEntry:
     @property
     def value(self) -> [int, str]:
         """
+        data stored information
 
         Returns
         -------
-
+        [int, str]
         """
         return self._value
 
@@ -101,15 +160,39 @@ class CharacterEntry:
 
     @property
     def label(self) -> str:
+        """
+        string to identify data stored
+
+        *read-only*
+
+        Returns
+        -------
+        str
+        """
         return self._label
 
     @property
     def name(self) -> str:
+        """
+        entry name: slugify(label)
+
+        *read-only*
+
+        Returns
+        -------
+        str
+        """
         return slugify(self._label)
 
     @property
     def message(self) -> str:
-        """Internal messages"""
+        """
+        last internal entry message (action)
+
+        Returns
+        -------
+        str
+        """
         return self._message[-1]
 
     @message.setter
@@ -121,10 +204,11 @@ class CharacterEntry:
     @property
     def messages(self) -> list:
         """
+        list of all internal messages (actions)
 
         Returns
         -------
-
+        list(str)
         """
         return [x for x in self._message]
 

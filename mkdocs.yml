@@ -1,13 +1,14 @@
-site_name: D6Engine Documentation
+site_name: d6Engine
 site_author: Chuck Mo
 copyright: GPLv3
 repo_url: https://gitlab.com/thechuckmo/d6engine/
 edit_uri: blob/master/docs/
 google_analytics: [UA-138667896-1, d6engine.org]
 
-nav:
-#- Home: index.md
-#- ReadMe: ../README.md
+#nav:
+#  - Home: index.md
+#  - ReadMe: ../README.md
+#  - Introduction: /introduction
 
 theme:
   name: readthedocs

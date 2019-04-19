@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcd520c8-52b4-4f22-971f-73327118e3a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/introduction/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/refrence/resource/base.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/d6engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/d6engine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d6engine/resource/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/d6engine/resource/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/d6_char_uuid.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/development/d6_char_uuid.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/d6egine.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/development/d6egine.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/d6engine.uml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/refrence/d6engine.uml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/introduction/notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/todos.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/development/todos.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tools.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/refrence/tools.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,43 +33,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/d6engine/resource/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="230">
+              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
-                <element signature="e#389#422#0" expanded="true" />
-                <element signature="e#440#482#0" expanded="true" />
+                <element signature="e#15#109#1" expanded="true" />
+                <element signature="e#110#139#0" expanded="true" />
+                <element signature="e#2165#2343#1" expanded="true" />
+                <element signature="e#3566#3665#1" expanded="true" />
+                <element signature="e#3743#3838#1" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mkdocs.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/d6engine/resource/test/test_characterentry.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="14" selection-end-line="129" />
             </state>
           </provider>
         </entry>
@@ -86,14 +70,19 @@
         <option value="$PROJECT_DIR$/d6engine/resource/test_characterentry.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
         <option value="$PROJECT_DIR$/d6engine/resource/test/test_characterentry.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/docs/index.md" />
+        <option value="$PROJECT_DIR$/docs/refrence/resource/base.md" />
         <option value="$PROJECT_DIR$/mkdocs.yml" />
         <option value="$PROJECT_DIR$/d6engine/resource/base.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1920" />
+    <option name="y" value="27" />
+    <option name="width" value="939" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -126,6 +115,12 @@
             </path>
             <path>
               <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="d6engine" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="introduction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -151,13 +146,17 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="PyCoverageOptionsProvider">
     <option name="myUseBundledCoveragePy" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/development" />
+      <recent name="$PROJECT_DIR$/docs/refrence" />
+      <recent name="$PROJECT_DIR$/docs/tutorial" />
+      <recent name="$PROJECT_DIR$/docs/how-to" />
       <recent name="$PROJECT_DIR$/d6engine/test" />
     </key>
   </component>
@@ -173,14 +172,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for d6engine.resource">
+  <component name="RunManager" selected="Python.base">
     <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="d6engine" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/d6engine/resource" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -236,6 +232,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.base" />
         <item itemvalue="Python.scratch_2" />
         <item itemvalue="Python.base" />
         <item itemvalue="Python.base" />
@@ -261,16 +258,14 @@
       <workItem from="1555542956574" duration="2716000" />
       <workItem from="1555623130233" duration="1470000" />
       <workItem from="1555630981021" duration="424000" />
+      <workItem from="1555631862877" duration="31000" />
+      <workItem from="1555631925808" duration="1282000" />
+      <workItem from="1555636634644" duration="523000" />
+      <workItem from="1555637293722" duration="6472000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_d6engine_resource - 2019.04.16 at 17h 33m 12s.xml">
-      <configuration name="pytest for d6engine.resource" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_d6engine_resource - 2019.04.16 at 17h 33m 40s.xml">
-      <configuration name="pytest for d6engine.resource" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_d6engine_resource - 2019.04.16 at 17h 35m 33s.xml">
       <configuration name="pytest for d6engine.resource" configurationId="tests" />
     </history-entry>
@@ -295,20 +290,26 @@
     <history-entry file="pytest_for_d6engine_resource - 2019.04.18 at 14h 56m 12s.xml">
       <configuration name="pytest for d6engine.resource" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_for_d6engine_resource - 2019.04.18 at 17h 00m 21s.xml">
+      <configuration name="pytest for d6engine.resource" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_d6engine_resource - 2019.04.18 at 18h 08m 27s.xml">
+      <configuration name="pytest for d6engine.resource" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23822000" />
+    <option name="totallyTimeSpent" value="32130000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="1920" y="27" width="1877" height="1053" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18903089" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15783724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.328807" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2931217" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -318,9 +319,10 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.6346382" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.2749274" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.43452957" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.23703703" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="13" visible="true" weight="0.43386245" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.3297769" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32910052" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -329,13 +331,14 @@
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Google Cloud Storage" order="6" show_stripe_button="false" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" />
+      <window_info anchor="right" id="Json Parser" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/d6engine$pytest_for_d6engine_resource.coverage" NAME="pytest for d6engine.resource Coverage Results" MODIFIED="1555631642540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/d6engine$pytest_for_d6engine_resource.coverage" NAME="pytest for d6engine.resource Coverage Results" MODIFIED="1555636106653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/d6engine$pytest_for_d6engine.coverage" NAME="pytest for d6engine.resource Coverage Results" MODIFIED="1555456483775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="editorHistoryManager">
@@ -368,6 +371,10 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/d6engine/resource/test/test_characterentry.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
@@ -378,31 +385,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="14" selection-end-line="129" />
+    <entry file="file://$PROJECT_DIR$/docs/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="69">
+            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/refrence/resource/base.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="23">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/introduction/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poetry.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/mkdocs.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/d6engine/resource/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="230">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <element signature="e#389#422#0" expanded="true" />
-            <element signature="e#440#482#0" expanded="true" />
+            <element signature="e#15#109#1" expanded="true" />
+            <element signature="e#110#139#0" expanded="true" />
+            <element signature="e#2165#2343#1" expanded="true" />
+            <element signature="e#3566#3665#1" expanded="true" />
+            <element signature="e#3743#3838#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

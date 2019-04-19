@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module d6engine.resource.base</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="d6engine.html"><font color="#ffffff">d6engine</font></a>.<a href="d6engine.resource.html"><font color="#ffffff">resource</font></a>.base</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/chuck/Projects/d6engine/d6engine/resource/base.py">/home/chuck/Projects/d6engine/d6engine/resource/base.py</a></font></td></tr></table>
+    <p><tt>base&nbsp;class&nbsp;<a href="#CharacterEntry">CharacterEntry</a>&nbsp;<a href="#CharacterComponent">CharacterComponent</a><br>
+&nbsp;<br>
+d6Engine&nbsp;base&nbsp;classes&nbsp;used&nbsp;for&nbsp;resources</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="d6engine.resource.base.html#CharacterEntry">CharacterEntry</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="collections.abc.html#Collection">collections.abc.Collection</a>(<a href="collections.abc.html#Sized">collections.abc.Sized</a>, <a href="collections.abc.html#Iterable">collections.abc.Iterable</a>, <a href="collections.abc.html#Container">collections.abc.Container</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="d6engine.resource.base.html#CharacterComponent">CharacterComponent</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CharacterComponent">class <strong>CharacterComponent</strong></a>(<a href="collections.abc.html#Collection">collections.abc.Collection</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="d6engine.resource.base.html#CharacterComponent">CharacterComponent</a></dd>
+<dd><a href="collections.abc.html#Collection">collections.abc.Collection</a></dd>
+<dd><a href="collections.abc.html#Sized">collections.abc.Sized</a></dd>
+<dd><a href="collections.abc.html#Iterable">collections.abc.Iterable</a></dd>
+<dd><a href="collections.abc.html#Container">collections.abc.Container</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CharacterComponent-__contains__"><strong>__contains__</strong></a>(self, item)</dt></dl>
+
+<dl><dt><a name="CharacterComponent-__iter__"><strong>__iter__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CharacterComponent-__len__"><strong>__len__</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<hr>
+Class methods inherited from <a href="collections.abc.html#Collection">collections.abc.Collection</a>:<br>
+<dl><dt><a name="CharacterComponent-__subclasshook__"><strong>__subclasshook__</strong></a>(C)<font color="#909090"><font face="helvetica, arial"> from <a href="abc.html#ABCMeta">abc.ABCMeta</a></font></font></dt><dd><tt>Abstract&nbsp;classes&nbsp;can&nbsp;override&nbsp;this&nbsp;to&nbsp;customize&nbsp;issubclass().<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;invoked&nbsp;early&nbsp;on&nbsp;by&nbsp;abc.ABCMeta.__subclasscheck__().<br>
+It&nbsp;should&nbsp;return&nbsp;True,&nbsp;False&nbsp;or&nbsp;NotImplemented.&nbsp;&nbsp;If&nbsp;it&nbsp;returns<br>
+NotImplemented,&nbsp;the&nbsp;normal&nbsp;algorithm&nbsp;is&nbsp;used.&nbsp;&nbsp;Otherwise,&nbsp;it<br>
+overrides&nbsp;the&nbsp;normal&nbsp;algorithm&nbsp;(and&nbsp;the&nbsp;outcome&nbsp;is&nbsp;cached).</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CharacterEntry">class <strong>CharacterEntry</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>base&nbsp;class&nbsp;character&nbsp;entry<br>
+&nbsp;<br>
+&nbsp;<br>
+...<br>
+&nbsp;<br>
+Attributes<br>
+----------<br>
+label:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;identifying&nbsp;the&nbsp;entry<br>
+value:&nbsp;int,&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data&nbsp;held&nbsp;in&nbsp;the&nbsp;entry<br>
+checks:&nbsp;list&nbsp;of&nbsp;func&nbsp;=&nbsp;<a href="#-default_check">default_check</a>(value:&nbsp;[int,&nbsp;str],&nbsp;data:&nbsp;dict)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list&nbsp;of&nbsp;functions&nbsp;used&nbsp;to&nbsp;verify&nbsp;value&nbsp;before&nbsp;setting<br>
+message:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;last&nbsp;internal&nbsp;<a href="builtins.html#object">object</a>&nbsp;message<br>
+&nbsp;<br>
+Methods<br>
+-------<br>
+name:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(read-only)&nbsp;auto&nbsp;generated&nbsp;with&nbsp;slugify(label)<br>
+messages:&nbsp;list&nbsp;of&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list&nbsp;of&nbsp;all&nbsp;internal&nbsp;<a href="builtins.html#object">object</a>&nbsp;messages<br>
+&nbsp;<br>
+Notes<br>
+-----<br>
+Check&nbsp;functions&nbsp;must&nbsp;take&nbsp;the&nbsp;new&nbsp;value&nbsp;and&nbsp;the&nbsp;entry&nbsp;<a href="builtins.html#object">object</a>&nbsp;as&nbsp;parameters&nbsp;and&nbsp;only&nbsp;return&nbsp;a&nbsp;bool.&nbsp;The&nbsp;checks<br>
+will&nbsp;be&nbsp;run&nbsp;in&nbsp;serial&nbsp;based&nbsp;on&nbsp;the&nbsp;order&nbsp;given&nbsp;until&nbsp;all&nbsp;succeeded&nbsp;or&nbsp;a&nbsp;check&nbsp;fails&nbsp;by&nbsp;returning&nbsp;a&nbsp;False.&nbsp;If<br>
+a&nbsp;test&nbsp;fails&nbsp;an&nbsp;exception&nbsp;will&nbsp;be&nbsp;raised,&nbsp;if&nbsp;all&nbsp;pass&nbsp;the&nbsp;new&nbsp;value&nbsp;will&nbsp;be&nbsp;set.&nbsp;Each&nbsp;check&nbsp;and&nbsp;the&nbsp;final&nbsp;status<br>
+is&nbsp;stored&nbsp;as&nbsp;a&nbsp;message&nbsp;on&nbsp;the&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+..&nbsp;def&nbsp;<a href="#CharacterEntry-name">name</a>(value:&nbsp;[int,&nbsp;str],&nbsp;entry:&nbsp;<a href="builtins.html#object">object</a>)&nbsp;-&gt;&nbsp;bool<br>
+..&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;entry.name&nbsp;!=&nbsp;'something':<br>
+..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;False<br>
+..&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;True<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="CharacterEntry-__bytes__"><strong>__bytes__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CharacterEntry-__eq__"><strong>__eq__</strong></a>(self, other)</dt><dd><tt>Return&nbsp;self==value.</tt></dd></dl>
+
+<dl><dt><a name="CharacterEntry-__init__"><strong>__init__</strong></a>(self, label:str, value:[&lt;class 'int'&gt;, &lt;class 'str'&gt;], checks:list=None)</dt><dd><tt>Initiate&nbsp;character&nbsp;entry&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+label&nbsp;:&nbsp;str<br>
+value&nbsp;:&nbsp;[int,&nbsp;str]<br>
+checks&nbsp;:&nbsp;list(func)&nbsp;optional</tt></dd></dl>
+
+<dl><dt><a name="CharacterEntry-__int__"><strong>__int__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CharacterEntry-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="CharacterEntry-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>label</strong></dt>
+<dd><tt>string&nbsp;to&nbsp;identify&nbsp;data&nbsp;stored<br>
+&nbsp;<br>
+*read-only*<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+str</tt></dd>
+</dl>
+<dl><dt><strong>message</strong></dt>
+<dd><tt>last&nbsp;internal&nbsp;entry&nbsp;message&nbsp;(action)<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+str</tt></dd>
+</dl>
+<dl><dt><strong>messages</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;all&nbsp;internal&nbsp;messages&nbsp;(actions)<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+list(str)</tt></dd>
+</dl>
+<dl><dt><strong>name</strong></dt>
+<dd><tt>entry&nbsp;name:&nbsp;slugify(label)<br>
+&nbsp;<br>
+*read-only*<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+str</tt></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+<dd><tt>data&nbsp;stored&nbsp;information<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+[int,&nbsp;str]</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+<dl><dt><strong>checks</strong> = [&lt;function default_check&gt;]</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-default_check"><strong>default_check</strong></a>(value:[&lt;class 'int'&gt;, &lt;class 'str'&gt;], entry:object) -&gt; bool</dt><dd><tt>default&nbsp;verifier&nbsp;for&nbsp;character&nbsp;attributes<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+value&nbsp;:<br>
+data&nbsp;:<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+:&nbsp;bool</tt></dd></dl>
+</td></tr></table>
+</body></html>
