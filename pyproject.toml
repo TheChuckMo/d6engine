@@ -2,8 +2,15 @@
 name = "d6engine"
 version = "0.1.2"
 description = "OpenD6 character engine"
-authors = ["Chuck Moreland <chuck@d6engine.com>"]
+authors = ["Chuck Moreland <chuck@d6engine.org>"]
 license = "GPL-3.0+"
+
+readme = 'README.md'
+
+repository = "https://gitlab.com/thechuckmo/d6engine"
+homepage = "https://d6engine.org"
+
+keywords = ['dice', 'd6engine', 'opend6']
 
 [tool.poetry.dependencies]
 python = "^3.6"
@@ -15,6 +22,7 @@ python-slugify = "^3.0"
 [tool.poetry.dev-dependencies]
 pytest = "^4.4"
 mkdocs = "^1.0"
+mkdocs-cluster = "^0.0.9"
 
 [tool.poetry.scripts]
 d6server = 'd6engine.server.main:cli'
