@@ -1,0 +1,2 @@
+mkdocs==1.0.4
+mkdocs-cluster==0.0.9
