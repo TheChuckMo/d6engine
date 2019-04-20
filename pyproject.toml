@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "d6engine"
-version = "0.1.3"
+version = "0.1.4"
 description = "OpenD6 character engine"
 authors = ["Chuck Moreland <chuck@d6engine.org>"]
 license = "GPL-3.0+"
@@ -11,6 +11,8 @@ repository = "https://gitlab.com/thechuckmo/d6engine"
 homepage = "https://d6engine.org"
 
 keywords = ['dice', 'd6engine', 'opend6']
+
+include = ['d6engine/data/*.yaml']
 
 [tool.poetry.dependencies]
 python = "^3.6"
