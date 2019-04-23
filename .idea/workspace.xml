@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcd520c8-52b4-4f22-971f-73327118e3a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/introduction/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/refrence/resource/base.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/d6engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/d6engine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d6engine/resource/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/d6engine/resource/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/d6_char_uuid.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/development/d6_char_uuid.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/d6egine.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/development/d6egine.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/d6engine.uml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/refrence/d6engine.uml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/introduction/notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/todos.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/development/todos.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tools.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/refrence/tools.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
-    </list>
+    <list default="true" id="dcd520c8-52b4-4f22-971f-73327118e3a6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,14 +18,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/d6engine/resource/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+            <state relative-caret-position="437">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding>
                 <element signature="e#15#109#1" expanded="true" />
-                <element signature="e#110#139#0" expanded="true" />
-                <element signature="e#2165#2343#1" expanded="true" />
-                <element signature="e#3566#3665#1" expanded="true" />
-                <element signature="e#3743#3838#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1920" />
     <option name="y" value="27" />
     <option name="width" value="939" />
@@ -89,36 +70,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="d6engine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="d6engine" type="462c0819:PsiDirectoryNode" />
-              <item name="d6engine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="d6engine" type="462c0819:PsiDirectoryNode" />
-              <item name="d6engine" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="d6engine" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="d6engine" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="introduction" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
@@ -132,6 +86,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="NBKnowledgePane" />
     </panes>
   </component>
@@ -177,6 +132,9 @@
       <module name="d6engine" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/d6engine/resource" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -262,6 +220,7 @@
       <workItem from="1555631925808" duration="1282000" />
       <workItem from="1555636634644" duration="523000" />
       <workItem from="1555637293722" duration="6472000" />
+      <workItem from="1555854487938" duration="32000" />
     </task>
     <servers />
   </component>
@@ -298,13 +257,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32130000" />
+    <option name="totallyTimeSpent" value="32162000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="27" width="1877" height="1053" extended-state="7" />
-    <editor active="true" />
+    <frame x="1920" y="27" width="1877" height="1053" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15783724" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1594757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -320,7 +278,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.6346382" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.23703703" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="13" visible="true" weight="0.43386245" />
+      <window_info anchor="bottom" id="Python Console" order="13" visible="true" weight="0.43386245" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.3297769" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32910052" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -425,14 +383,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/d6engine/resource/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        <state relative-caret-position="437">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding>
             <element signature="e#15#109#1" expanded="true" />
-            <element signature="e#110#139#0" expanded="true" />
-            <element signature="e#2165#2343#1" expanded="true" />
-            <element signature="e#3566#3665#1" expanded="true" />
-            <element signature="e#3743#3838#1" expanded="true" />
           </folding>
         </state>
       </provider>
