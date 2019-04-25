@@ -11,11 +11,11 @@ google_analytics: [UA-138667896-1, d6engine.org]
 #   - Examples:   guides/examples.md
 
 theme:
-        name: cluster
+  name: cluster
 
 extra:
-        fa_logo: 'fa-dice-one'
-    #prev_next_enabled: False
-    #nav_right: ['Install', 'DevSetup', 'Examples']
-    #hidden: ['Home']
+  fa_logo: 'fa-dice-one'
+  #prev_next_enabled: False
+  #nav_right: ['Install', 'DevSetup', 'Examples']
+  #hidden: ['Home']
 

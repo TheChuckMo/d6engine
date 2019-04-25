@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../d6dice/.idea/d6dice.iml" filepath="$PROJECT_DIR$/../d6dice/.idea/d6dice.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/d6engine.iml" filepath="$PROJECT_DIR$/.idea/d6engine.iml" />
     </modules>
   </component>

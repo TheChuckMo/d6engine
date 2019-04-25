@@ -211,4 +211,3 @@ class CharacterEntry:
         list(str)
         """
         return [x for x in self._message]
-
