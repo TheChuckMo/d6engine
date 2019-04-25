@@ -12,3 +12,4 @@ wheelhouse/
 d6engine.egg-info/
 pip-wheel-metadata/
 /.pytest_cache/
+.DS_Store
