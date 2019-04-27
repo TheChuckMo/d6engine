@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcd520c8-52b4-4f22-971f-73327118e3a6" name="Default Changelist" comment="" />
+    <list default="true" id="dcd520c8-52b4-4f22-971f-73327118e3a6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../d6dice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../d6dice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/d6engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/d6engine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/bin/easy_install" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/bin/easy_install-3.7" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/bin/easy_install-3.7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/bin/livereload" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/bin/livereload" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/bin/markdown_py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/bin/markdown_py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/bin/mkdocs" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/bin/mkdocs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/bin/pip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/bin/pip3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/bin/pip3.7" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/bin/pip3.7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/bin/py.test" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/bin/py.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/bin/pytest" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/bin/pytest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/bin/slugify" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/bin/slugify" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d6engine/client/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/d6engine/client/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d6engine/resource/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/d6engine/resource/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/refrence/d6engine.resource.base.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/refrence/d6engine.resource.base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/d6engine/resource/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="161">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
               <folding>
                 <element signature="e#15#109#1" expanded="true" />
               </folding>
@@ -59,12 +81,19 @@
       </list>
     </option>
   </component>
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="d6engine" />
+      <scope name="d6dice" />
+    </order>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="1920" />
     <option name="y" value="27" />
     <option name="width" value="939" />
     <option name="height" value="1053" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -73,6 +102,10 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="d6engine" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
@@ -97,14 +130,28 @@
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../d6dice" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.stylelint" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="d6engine" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="d6engine" />
+      </console-settings>
+    </option>
   </component>
   <component name="PyCoverageOptionsProvider">
     <option name="myUseBundledCoveragePy" value="true" />
+  </component>
+  <component name="PyDebuggerOptionsProvider">
+    <option name="mySaveCallSignatures" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -221,6 +268,7 @@
       <workItem from="1555636634644" duration="523000" />
       <workItem from="1555637293722" duration="6472000" />
       <workItem from="1555854487938" duration="32000" />
+      <workItem from="1556062050010" duration="3143000" />
     </task>
     <servers />
   </component>
@@ -257,12 +305,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32162000" />
+    <option name="totallyTimeSpent" value="35305000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="27" width="1877" height="1053" extended-state="6" />
+    <frame x="1920" y="-37" width="1920" height="1117" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1594757" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16115262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -278,7 +326,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.6346382" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.23703703" />
-      <window_info anchor="bottom" id="Python Console" order="13" visible="true" weight="0.43386245" />
+      <window_info anchor="bottom" id="Python Console" order="13" visible="true" weight="0.43368828" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.3297769" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32910052" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -294,6 +342,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/d6engine$pytest_for_d6engine_resource.coverage" NAME="pytest for d6engine.resource Coverage Results" MODIFIED="1555636106653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -330,9 +383,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/d6engine/resource/test/test_characterentry.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
@@ -363,14 +413,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/introduction/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/introduction/index.md" />
     <entry file="file://$PROJECT_DIR$/poetry.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -381,10 +424,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/d6engine/resource/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state relative-caret-position="161">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding>
             <element signature="e#15#109#1" expanded="true" />
           </folding>
