@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcd520c8-52b4-4f22-971f-73327118e3a6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../d6dice/.idea/d6dice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../d6dice/.idea/d6dice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/d6engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/d6engine.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
@@ -96,11 +98,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/d6engine/data/character_data_structure.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="19" column="77" lean-forward="true" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
+              <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../d6dice/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="10" selection-start-line="8" selection-start-column="5" selection-end-line="9" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -120,7 +140,7 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../d6dice" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -129,7 +149,6 @@
         <option value="$PROJECT_DIR$/d6engine/resource/test_characterentry.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
         <option value="$PROJECT_DIR$/d6engine/resource/test/test_characterentry.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/docs/index.md" />
         <option value="$PROJECT_DIR$/docs/refrence/resource/base.md" />
         <option value="$PROJECT_DIR$/mkdocs.yml" />
@@ -138,6 +157,7 @@
         <option value="$PROJECT_DIR$/../d6web/src/publishconf.py" />
         <option value="$PROJECT_DIR$/../d6dice/docs/guides/examples.md" />
         <option value="$PROJECT_DIR$/../d6dice/docs/index.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -153,13 +173,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="d6engine" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Projects/d6engine" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="d6engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="d6dice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="d6web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="d6engine" type="b2602c69:ProjectViewProjectNode" />
@@ -308,7 +346,7 @@
       <workItem from="1555636634644" duration="523000" />
       <workItem from="1555637293722" duration="6472000" />
       <workItem from="1555854487938" duration="32000" />
-      <workItem from="1556226820619" duration="2977000" />
+      <workItem from="1556226820619" duration="3426000" />
     </task>
     <servers />
   </component>
@@ -345,12 +383,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35139000" />
+    <option name="totallyTimeSpent" value="35588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="72" y="37" width="1620" height="1028" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16730037" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16730037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -365,7 +403,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.6346382" />
-      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.25496343" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.25496343" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.42095053" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.3297769" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32910052" />
@@ -418,9 +456,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/d6engine/resource/test/test_characterentry.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
@@ -533,7 +568,21 @@
     <entry file="file://$PROJECT_DIR$/d6engine/data/character_data_structure.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="19" column="77" lean-forward="true" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
+          <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../d6dice/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="10" selection-start-line="8" selection-start-column="5" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
