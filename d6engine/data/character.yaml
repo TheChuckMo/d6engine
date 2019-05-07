@@ -1,0 +1,31 @@
+---
+# Base entry
+Id: # Character UUID
+Name: # Character name
+Description: # Character description
+# Character Traits
+Height:
+Weight:
+Age:
+Sex:
+Skin Color:
+Hair Color:
+Eye Color:
+Home Country:
+Attributes:
+  - Dexterity:
+  - Strength:
+  - Endurance:
+  - Intelligence:
+  - Will Power:
+  - Perception:
+  - Social:
+  - Charisma:
+Skills:
+  Medical:
+    - Medicine
+    - Diagnose
+    - Brute
+    - Burn
+    - Surgery
+    - Knowledge
