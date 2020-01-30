@@ -1,0 +1,16 @@
+﻿{
+    "name": "Sir Hungry Mo",
+    "age": 63,
+    "height": "5'6",
+    "weight": "135",
+    "species": "human",
+    "hair_color": "grey",
+    "eye_color": "hazel",
+    "origin_of_birth": "earth",
+    "features": [
+        "jesus shaped scar on arm",
+        "missing little toe"
+    ],
+    "description": "The best character",
+    "image_url": "https://muse.moosejudge.com/img/logo.png"
+}

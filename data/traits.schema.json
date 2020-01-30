@@ -1,0 +1,76 @@
+﻿{
+    "title": "Traits",
+    "type": "object",
+    "properties": {
+        "name": {
+            "title": "Name",
+            "maxLength": 50,
+            "type": "string"
+        },
+        "age": {
+            "title": "Age",
+            "minimum": 1,
+            "type": "integer"
+        },
+        "height": {
+            "title": "Height",
+            "maxLength": 20,
+            "type": "string"
+        },
+        "weight": {
+            "title": "Weight",
+            "type": "integer",
+            "exclusiveMinimum": 0
+        },
+        "species": {
+            "title": "Species",
+            "maxLength": 50,
+            "type": "string"
+        },
+        "hair_color": {
+            "title": "Hair Color",
+            "maxLength": 25,
+            "type": "string"
+        },
+        "eye_color": {
+            "title": "Eye Color",
+            "maxLength": 50,
+            "type": "string"
+        },
+        "origin_of_birth": {
+            "title": "Origin of Birth",
+            "maxLength": 50,
+            "type": "string"
+        },
+        "features": {
+            "title": "Special Features",
+            "default": [],
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "description": {
+            "title": "Description",
+            "maxLength": 250,
+            "type": "string"
+        },
+        "image_url": {
+            "title": "Image URL",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2083,
+            "format": "uri"
+        }
+    },
+    "required": [
+        "name",
+        "age",
+        "height",
+        "weight",
+        "species",
+        "hair_color",
+        "eye_color",
+        "origin_of_birth"
+    ]
+}

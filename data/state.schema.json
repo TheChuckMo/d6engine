@@ -1,0 +1,20 @@
+﻿{
+    "title": "State",
+    "type": "object",
+    "properties": {
+        "hp": {
+            "title": "Health Points",
+            "type": "integer",
+            "exclusiveMinimum": 0
+        },
+        "ap": {
+            "title": "Advancement Points",
+            "type": "integer",
+            "exclusiveMinimum": 0
+        }
+    },
+    "required": [
+        "hp",
+        "ap"
+    ]
+}

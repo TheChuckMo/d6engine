@@ -1,0 +1,71 @@
+﻿{
+    "title": "Character",
+    "type": "object",
+    "properties": {
+        "control": {
+            "$ref": "#/definitions/D6CharacterControl"
+        },
+        "state": {
+            "$ref": "#/definitions/D6SCharacterState"
+        }
+    },
+    "required": [
+        "control",
+        "state"
+    ],
+    "definitions": {
+        "D6CharacterControl": {
+            "title": "control",
+            "type": "object",
+            "properties": {
+                "key": {
+                    "title": "Key",
+                    "type": "integer"
+                },
+                "realm": {
+                    "title": "Realm",
+                    "enum": [
+                        "realms",
+                        "adventure",
+                        "fantasy",
+                        "space"
+                    ],
+                    "type": "string"
+                },
+                "player": {
+                    "title": "Player",
+                    "type": "string",
+                    "format": "name-email"
+                },
+                "hash": {
+                    "title": "Hash",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "key",
+                "realm",
+                "player",
+                "hash"
+            ]
+        },
+        "D6SCharacterState": {
+            "title": "state",
+            "type": "object",
+            "properties": {
+                "health_points": {
+                    "title": "Health Points",
+                    "type": "integer"
+                },
+                "advancement_points": {
+                    "title": "Advancement Points",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "health_points",
+                "advancement_points"
+            ]
+        }
+    }
+}

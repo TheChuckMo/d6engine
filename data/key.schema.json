@@ -1,0 +1,29 @@
+﻿{
+    "title": "Key",
+    "type": "object",
+    "properties": {
+        "id": {
+            "title": "ID",
+            "type": "integer",
+            "exclusiveMinimum": 0
+        },
+        "universe": {
+            "title": "Universe",
+            "enum": [
+                "realms",
+                "fantasy"
+            ],
+            "type": "string"
+        },
+        "player": {
+            "title": "Player email",
+            "type": "string",
+            "format": "email"
+        }
+    },
+    "required": [
+        "id",
+        "universe",
+        "player"
+    ]
+}

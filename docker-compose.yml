@@ -1,8 +1,0 @@
-version: '2.1'
-
-services:
-  d6engine:
-    image: d6engine
-    build: .
-    ports:
-      - 6969:6969

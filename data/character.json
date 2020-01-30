@@ -1,0 +1,40 @@
+﻿{
+    "key": {
+        "id": 83451,
+        "universe": "realms",
+        "player": "john@email.com"
+    },
+    "traits": {
+        "name": "Sir Hungry Mo",
+        "age": 63,
+        "height": "5'6",
+        "weight": "135",
+        "species": "human",
+        "hair_color": "grey",
+        "eye_color": "hazel",
+        "origin_of_birth": "earth",
+        "features": [
+            "jesus shaped scar on arm",
+            "missing little toe"
+        ],
+        "description": "The best character",
+        "image_url": "https://muse.moosejudge.com/img/logo.png"
+    },
+    "state": {
+        "hp": 26,
+        "ap": 4
+    },
+    "attributes": {
+        "dexterity": 4,
+        "strength": 3,
+        "intelligence": 2,
+        "willpower": 5,
+        "endurance": 1,
+        "perception": 6,
+        "social": 3,
+        "chance": 2
+    },
+    "skills": {
+        "list": "tbd"
+    }
+}

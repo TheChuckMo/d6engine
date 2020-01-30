@@ -1,0 +1,64 @@
+﻿{
+    "title": "Attributes",
+    "type": "object",
+    "properties": {
+        "dexterity": {
+            "title": "Dexterity",
+            "minimum": 0,
+            "maximum": 6,
+            "type": "integer"
+        },
+        "strength": {
+            "title": "Strength",
+            "minimum": 0,
+            "maximum": 6,
+            "type": "integer"
+        },
+        "intelligence": {
+            "title": "Intelligence",
+            "minimum": 0,
+            "maximum": 6,
+            "type": "integer"
+        },
+        "willpower": {
+            "title": "Willpower",
+            "minimum": 0,
+            "maximum": 6,
+            "type": "integer"
+        },
+        "endurance": {
+            "title": "Endurance",
+            "minimum": 0,
+            "maximum": 6,
+            "type": "integer"
+        },
+        "perception": {
+            "title": "Perception",
+            "minimum": 0,
+            "maximum": 6,
+            "type": "integer"
+        },
+        "social": {
+            "title": "Social",
+            "minimum": 0,
+            "maximum": 6,
+            "type": "integer"
+        },
+        "chance": {
+            "title": "Chance",
+            "minimum": 0,
+            "maximum": 6,
+            "type": "integer"
+        }
+    },
+    "required": [
+        "dexterity",
+        "strength",
+        "intelligence",
+        "willpower",
+        "endurance",
+        "perception",
+        "social",
+        "chance"
+    ]
+}
