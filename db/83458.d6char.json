@@ -1,0 +1,40 @@
+{
+    "key": {
+        "id": 83458,
+        "universe": "realms",
+        "player": "timmy@email.com"
+    },
+    "traits": {
+        "name": "Betty of SunnyD",
+        "age": 59,
+        "height": "6'8",
+        "weight": "185",
+        "species": "mucas",
+        "hair_color": "pink",
+        "eye_color": "purple",
+        "origin_of_birth": "mucasal",
+        "features": [
+            "no middle finger",
+            "tattoo of Bobby"
+        ],
+        "description": "Mucas Betty",
+        "image_url": "https://muse.moosejudge.com/img/logo.png"
+    },
+    "state": {
+        "hp": 82,
+        "ap": 8
+    },
+    "attributes": {
+        "dexterity": 6,
+        "strength": 4,
+        "intelligence": 3,
+        "willpower": 4,
+        "endurance": 2,
+        "perception": 3,
+        "social": 4,
+        "chance": 1
+    },
+    "skills": {
+        "list": "tbd"
+    }
+}

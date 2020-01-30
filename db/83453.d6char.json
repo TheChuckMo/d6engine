@@ -1,0 +1,39 @@
+{
+    "key": {
+        "id": 83453,
+        "universe": "realms",
+        "player": "betty@email.com"
+    },
+    "traits": {
+        "name": "Bobby of SunnyD",
+        "age": 19,
+        "height": "6'6",
+        "weight": "185",
+        "species": "mucas",
+        "hair_color": "blue",
+        "eye_color": "blue",
+        "origin_of_birth": "mucasal",
+        "features": [
+            "large middle finger"
+        ],
+        "description": "Mucas Bobby",
+        "image_url": "https://muse.moosejudge.com/img/logo.png"
+    },
+    "state": {
+        "hp": 32,
+        "ap": 8
+    },
+    "attributes": {
+        "dexterity": 4,
+        "strength": 3,
+        "intelligence": 2,
+        "willpower": 5,
+        "endurance": 1,
+        "perception": 6,
+        "social": 3,
+        "chance": 2
+    },
+    "skills": {
+        "list": "tbd"
+    }
+}
